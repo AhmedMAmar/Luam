@@ -23,7 +23,7 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
         <Box marginTop='2'>
         <Text fontSize='md' marginBottom='2' fontWeight='bold'>+221 778239647</Text>
         </Box>
-        <Avatar size='sm' src={whatsapp}></Avatar>
+        <Avatar size='sm' src='https://cdn-icons-png.flaticon.com/512/1051/1051272.png'></Avatar>
       </Flex>
       <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
         {rooms}<FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
