@@ -27,12 +27,12 @@ const Search = ({ properties }) => {
         justifyContent='center'
         alignItems='center'
       >
-        <Text>Search Property By Filters</Text>
+        <Text>rechercher par filtrage</Text>
         <Icon paddingLeft='2' w='7' as={BsFilter} />
       </Flex>
       {searchFilters && <SearchFilters />}
       <Text fontSize='2xl' p='4' fontWeight='bold'>
-        Properties {router.query.purpose}
+        Propriétés
       </Text>
       <Flex flexWrap='wrap'>
         {properties.map((property) => <Property property={property} key={property.id} />)}

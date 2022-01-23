@@ -59,7 +59,7 @@ export default function SearchFilters() {
       ))}
       <Flex flexDir='column'>
         <Button onClick={() => setShowLocations(!showLocations)} border='1px' borderColor='gray.200' marginTop='2' >
-          Search Location
+          chercher par positon
         </Button>
         {showLocations && (
           <Flex flexDir='column' pos='relative' paddingTop='2'>
@@ -102,7 +102,7 @@ export default function SearchFilters() {
                   <Flex justifyContent='center' alignItems='center' flexDir='column' marginTop='5' marginBottom='5' >
                     <Image src={noresult} />
                     <Text fontSize='xl' marginTop='3'>
-                      Waiting to search!
+                      loading!
                     </Text>
                   </Flex>
                 )}
