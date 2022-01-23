@@ -7,6 +7,8 @@ import millify from 'millify';
 
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
+import whatsapp from '../../assets/images/whatsapp.png';
+
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => (
   <Box maxWidth='1000px' margin='auto' p='4'>
@@ -15,10 +17,13 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
       <Flex paddingTop='2' alignItems='center'>
         <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}</Box>
         <Text fontWeight='bold' fontSize='lg'>
-          AED {price} {rentFrequency && `/${rentFrequency}`}
+          F.CFA {price} {rentFrequency && `/${rentFrequency}`}
         </Text>
         <Spacer />
-        <Avatar size='sm' src={agency?.logo?.url}></Avatar>
+        <Box marginTop='2'>
+        <Text fontSize='md' marginBottom='2' fontWeight='bold'>+221 778239647</Text>
+        </Box>
+        <Avatar size='sm' src={whatsapp}></Avatar>
       </Flex>
       <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
         {rooms}<FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
